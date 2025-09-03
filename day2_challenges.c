@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-void main(){
+int main(){
     int x;
-    int somme[x];
+    
     
     printf("how much number do you want to calcule : ");
     scanf("%d",&x);
+    int somme[x];
     int calcule= 0;
     for(int i = 0 ; i < x ; i++){
         printf("number %d : ",i+1);
-        scanf("%d",somme[i]);
-        calcule += somme[i];
-        printf("%d",calcule);
+        scanf("%d",&somme[i]);
+        calcule = calcule + somme[i];
+        printf("%d\n",calcule);
     }
-   // return 0;
+   return 0;
 }
