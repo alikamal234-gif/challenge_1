@@ -15,11 +15,13 @@ int main(){
         
         for(int j = i+1; j<how;j++){
             int s ;
-            if(compare[i] > compare[j]){
+            if(compare[i] < compare[j]){
                 s = compare[i];
                 compare[i]=compare[j];
                 compare[j]=s;
+                
             }
+            printf("%d",compare[i]);
             
         }
     }
